@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>fresh prints of bell air</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/headtrackr.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <style type="text/css">
+    html, body { margin:0; padding:0; overflow:hidden; background-color: #307A91; }
+    object { position:fixed; top:0; bottom:0; left:0; right:0 }
+  </style>
+</head>
+<body>
+  <canvas id="inputCanvas" width="320" height="240" style="display:none"></canvas>
+  <video id="inputVideo" autoplay loop></video>
+  <script type="text/javascript">
+
+
+    $(function() {
+
+      var videoInput = document.getElementById('inputVideo');
+      var canvasInput = document.getElementById('inputCanvas');
+
+      var htracker = new headtrackr.Tracker();
+      htracker.init(videoInput, canvasInput);
+      htracker.start();
+      
+
+      var svg = document.getElementById("svg").contentDocument;
+      var fronts = svg.getElementById("front").getElementsByClassName('st10');;
+      var sides = svg.getElementById("side").getElementsByClassName('st9');
+      var sides2 = svg.getElementById("side2").getElementsByClassName('st9');
+
+      document.addEventListener("headtrackingEvent", function( event ) {
+        // clear canvas
+        console.log(event);
+      });
+
+      function render() {
+        setElementsFillColour(fronts, "pink");
+        setElementsFillColour(sides, "blue");
+        setElementsFillColour(sides2, "blue");
+
+        requestAnimationFrame(render);
+      }
+      requestAnimationFrame(render);
+
+      function setElementsFillColour(_elements, _color) {
+        for (var i = 0; i < _elements.length; i++) {
+          _elements[i].style.fill = _color;
+        }
+      }
+
+    });
+
+  </script>
+
+  <object id="svg" type="image/svg" data="img/fresh_prints_of_bel_air.svg">
+    Your browser doesn't support SVG
+  </object>
+
+</body>
+</html>

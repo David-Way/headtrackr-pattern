@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 900" style="enable-background:new 0 0 1600 900;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#231F20;}
+	.st2{display:inline;fill:#231F20;stroke:#231F20;stroke-miterlimit:10;}
+	.st3{display:inline;fill:#1C75BC;}
+	.st4{display:inline;}
+	.st5{fill:#56C1C1;}
+	.st6{fill:#84C156;}
+	.st7{fill:#C45575;}
+	.st8{fill:#307A91;}
+	.st9{fill:#E8E8E8;}
+	.st10{fill:#77283F;}
+</style>
+<g id="pattern">
+	<g id="background">
+		<rect class="st8" width="1600" height="900"/>
+	</g>
+	<g id="side2">
+		<polygon class="st9" points="1192,862 1192,900 1157.2,900 1112,801.5 1077.4,726 1050.4,667 1049,664 1049,550 		"/>
+	</g>
+	<g id="front">
+		<rect x="63" y="137" class="st10" width="222" height="114"/>
+		<rect x="205" y="458" class="st10" width="229.1" height="159"/>
+		<rect x="226.6" y="804" class="st10" width="36.4" height="59"/>
+		<rect x="411" y="805" class="st10" width="182" height="32"/>
+		<rect x="332" y="837" class="st10" width="261" height="63"/>
+		<rect x="570" y="625" class="st10" width="165" height="59"/>
+		<rect x="617" y="726" class="st10" width="495" height="90"/>
+		<rect x="753" y="504" class="st10" width="589" height="148"/>
+		<polygon class="st10" points="504,283 386.2,283 386,186 504,186 		"/>
+		<rect x="672" y="333" class="st10" width="40" height="59"/>
+		<rect x="769" y="341" class="st10" width="82" height="57"/>
+		<rect x="761" y="203" class="st10" width="108" height="129"/>
+		<rect x="917.9" y="311" class="st10" width="253.1" height="129"/>
+		<rect x="1263" y="613" class="st10" width="337" height="103"/>
+		<rect x="1326" y="757" class="st10" width="274" height="74"/>
+		<rect x="1192" y="862" class="st10" width="89" height="38"/>
+		<rect x="1384" y="424" class="st10" width="216" height="114"/>
+		<polygon class="st10" points="1442,249 1208,249 1208.2,103 1442,103 		"/>
+		<rect y="223" class="st10" width="24" height="98"/>
+		<rect y="457" class="st10" width="20" height="44"/>
+		<rect y="798" class="st10" width="154" height="83"/>
+		<rect x="296" y="727" class="st10" width="79" height="32"/>
+	</g>
+	<g id="side">
+		<polygon class="st9" points="63,251 19,155 19,41 63,137 		"/>
+		<polygon class="st9" points="205,617 89,361.5 89,202.5 205,458 		"/>
+		<polygon class="st9" points="296,832.5 213,649 213,543.5 296,727 		"/>
+		<polygon class="st9" points="411,837 375,759 375,727 411,805 		"/>
+		<polygon class="st9" points="332,837 332,900 327.2,900 296,832.5 296,759 		"/>
+		<polygon class="st9" points="300.9,0 386,186 386,283 290,73 290,0 		"/>
+		<polygon class="st9" points="570,684 398,308 398,249 570,625 		"/>
+		<polygon class="st9" points="617,816 590,757 590,667 617,726 		"/>
+		<polygon class="st9" points="227,863 58.4,494 58.4,435 227,804 		"/>
+		<polygon class="st9" points="769,398 731,314.9 731,257.9 769,341 		"/>
+		<polygon class="st9" points="753,652 710,559 710,411 753,504 		"/>
+		<polyline class="st9" points="520,0 672,333 672,392 493.3,0 520,0 		"/>
+		<polygon class="st9" points="761,203 760.8,257.9 760.6,322.7 760.6,332 731,267.3 645,79 645,0 667.9,0 		"/>
+		<polyline class="st9" points="1161,0 1208.1,103 1208,249 1115,45 1115,0 1161,0 		"/>
+		<polygon class="st9" points="1384,538 1272,292 1272,178 1384,424 		"/>
+		<polygon class="st9" points="1263,716 1236,656 1236,553 1263,613 		"/>
+		<polygon class="st9" points="1326,831 1283.1,736.5 1283.1,663 1326,757.5 		"/>
+		<polygon class="st9" points="917.9,440 869,332 869,203 917.9,311 		"/>
+		<polygon class="st9" points="1449.5,900 1396,900 1396,782 1418,831 1418,831 		"/>
+		<polygon class="st9" points="1085,664 1049,664 1049,550 1192,862 		"/>
+	</g>
+	<g id="top">
+		<polygon class="st7" points="20,457 0,457 0,413.1 		"/>
+		<polygon class="st7" points="263.6,804 227,804 58,435 95,435 		"/>
+		<polygon class="st7" points="473.8,544 593,805 411,805 375,727 296,727 213,544 		"/>
+		<polygon class="st7" points="434.1,458 205,458 89,203 317.7,203 		"/>
+		<polyline class="st7" points="520,0 672,333 712,333 560.5,0 520,0 		"/>
+		<polygon class="st7" points="753,504 710,410 1299,410 1342,504 		"/>
+		<polygon class="st7" points="503.8,186 386,186 300.8,0 418.6,0 		"/>
+		<polygon class="st7" points="154,798 0,798 0,542 37,542 		"/>
+		<polygon class="st7" points="411,837 332,837 296,759 375,759 		"/>
+		<polygon class="st7" points="24,223 0,223 0,170.5 		"/>
+		<polygon class="st7" points="734.7,625 570,625 398,249 562.7,249 		"/>
+		<polygon class="st7" points="63,137 19.1,41 241.2,41 285.1,137 		"/>
+		<polygon class="st7" points="1171,311 917.9,311 869,203 761,203 667.9,0 1028.8,0 		"/>
+		<polygon class="st7" points="851,341 769,341 731,257.9 812.7,257.9 		"/>
+		<polygon class="st7" points="1281,862 1192,862 1049,550 1139,550 		"/>
+		<polygon class="st7" points="617,726 590.1,667 1085,667 1112,726 		"/>
+		<polygon class="st7" points="1600,553 1600,613 1263,613 1236,553 		"/>
+		<polygon class="st7" points="1600,663 1600,757 1326,757 1307.3,716 1283.1,663 		"/>
+		<polygon class="st7" points="1567.7,900 1449.7,900 1418.3,831 1396,782 1514,782 1536.3,831 		"/>
+		<polyline class="st7" points="1161,0 1394.9,0 1442,103 1208,103 1161,0 		"/>
+		<polygon class="st7" points="1600,252.4 1600,424 1384,424 1304.3,249 1272,178 1566,178 		"/>
+	</g>
+</g>
+</svg>
