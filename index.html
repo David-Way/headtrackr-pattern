@@ -2,63 +2,81 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>fresh prints of bell air</title>
+  <title>Fresh Prints of Bell Air</title>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="js/headtrackr.js"></script>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <style type="text/css">
     html, body { margin:0; padding:0; overflow:hidden; background-color: #307A91; }
-    object { position:fixed; top:0; bottom:0; left:0; right:0 }
+    object { position:fixed; top:0; bottom:0; left:0; right:0; }
   </style>
 </head>
 <body>
   <canvas id="inputCanvas" width="320" height="240" style="display:none"></canvas>
   <video id="inputVideo" autoplay loop></video>
   <script type="text/javascript">
+    var frontColor = "c14d6d"; 
+    var sideColor = "E8E8E8";
+    var colorSetOne = ["0b0406", "1a090e", "280e15", "37131d", "461825", "541d3c", "632234", "71273c", "802c43", "8e314b", "9d3653", "ac3b5a", "ba4062", "c14d6d", "c65b79", "cb6a85", "d17891", "d6879d", "db96a9", "e0a4b5", "e5b3c1", "eac1cd", "efd0d9", "f4dfe4", "f9edf0", "fefcfc"];
+    var colorSetTwo = ["fefcfc", "f9edf0", "f4dfe4", "efd0d9", "eac1cd", "e5b3c1", "e0a4b5", "db96a9", "d6879d", "d17891", "cb6a85", "c65b79", "c14d6d", "ba4062", "ac3b5a", "9d3653", "8e314b", "802c43", "71273c", "632234", "541d3c", "461825", "37131d", "280e15", "1a090e", "0b0406"];
 
+    var svg, fronts, sides, sides2, lost, currentStatus, lastKnownPosition;
 
-    $(function() {
+    function init() {
+
+      Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+        if (this < in_min) 
+          { return out_min; } 
+        else if (this > in_max) 
+          { return out_max; }
+        return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+      }
+
+      svg = document.getElementById("svg").contentDocument;
+      fronts = svg.getElementById("front").getElementsByClassName('st10');;
+      sides = svg.getElementById("side").getElementsByClassName('st9');
+      sides2 = svg.getElementById("side2").getElementsByClassName('st9');
+
+      document.addEventListener("headtrackingEvent", function( event ) {
+        var colorIndex = Math.floor(event.x.map(-30, 30, 0, colorSetOne.length -1));
+        //console.log("colorIndex: " + colorIndex + " - color1: #" + colorSetOne[colorIndex] + " - color2: #" + colorSetTwo[colorIndex]);
+        frontColor = colorSetOne[colorIndex];
+        sideColor = colorSetTwo[colorIndex]; 
+      });
+
+      requestAnimationFrame(render);
 
       var videoInput = document.getElementById('inputVideo');
       var canvasInput = document.getElementById('inputCanvas');
 
-      var htracker = new headtrackr.Tracker();
+      var htracker = new headtrackr.Tracker({
+        smoothing : true,
+        calcAngles: false
+      });
       htracker.init(videoInput, canvasInput);
       htracker.start();
       
-
-      var svg = document.getElementById("svg").contentDocument;
-      var fronts = svg.getElementById("front").getElementsByClassName('st10');;
-      var sides = svg.getElementById("side").getElementsByClassName('st9');
-      var sides2 = svg.getElementById("side2").getElementsByClassName('st9');
-
-      document.addEventListener("headtrackingEvent", function( event ) {
-        // clear canvas
-        console.log(event);
-      });
-
       function render() {
-        setElementsFillColour(fronts, "pink");
-        setElementsFillColour(sides, "blue");
-        setElementsFillColour(sides2, "blue");
+        setElementsFillColour(fronts, frontColor);
+        setElementsFillColour(sides, sideColor);
+        setElementsFillColour(sides2, sideColor);
 
         requestAnimationFrame(render);
       }
-      requestAnimationFrame(render);
 
       function setElementsFillColour(_elements, _color) {
         for (var i = 0; i < _elements.length; i++) {
-          _elements[i].style.fill = _color;
+          _elements[i].style.fill = "#" + _color;
         }
       }
 
-    });
+    }
 
   </script>
 
-  <object id="svg" type="image/svg" data="img/fresh_prints_of_bel_air.svg">
+  <object id="svg" type="image/svg+xml" data="img/fresh_prints_of_bel_air.svg"
+    onload="init()">
     Your browser doesn't support SVG
   </object>
-
 </body>
 </html>
